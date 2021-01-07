@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="control.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Register with us</h2>
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="Enter email" />
+          <small>Error message</small>
+        </div>
+        <div class="form-control form-password">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password" />
+          <small class="small-password">Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="password__confirm">Confirm password</label>
+          <input
+            type="password"
+            id="password__confirm"
+            placeholder="Enter password again"
+          />
+          <small>Error message</small>
+        </div>
+        <button>Submit</button>
+      </form>
+    </div>
+
+    <div class="overay hidden"></div>
+    <div class="submit__window hidden">
+      <i class="far fa-times-circle btn--close--modal"></i>
+      <h1>Congratulation!</h1>
+      <h2>succesfully signed up :)</h2>
+    </div>
+  </body>
+</html>
